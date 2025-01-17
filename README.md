@@ -67,10 +67,42 @@ Install dependencies:- pip install -r requirements.txt
 | 8     | Fine-tuning all layers of pretrained DenseNet 201 on ImageNet | [**Notebook**](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Retraining_DenseNet.ipynb) |
 | 9     | Ensemble model of the fully fine-tuned Inception V3 and DenseNet 201 | **[Notebook](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Ensemble_Models.ipynb)** |
 
+## Usage
+Preprocess the dataset: Run the preprocessing script to resize and normalize images.
 
-## Technical Issue
+python preprocess.py
 
-All Notebooks using Keras 2.2.4 and Tensorflow 1.11. Batch-Norm layer in this version of Keras is implemented in a way that: during training your network will always use the mini-batch statistics either the BN layer is frozen or not; also during inference you will use the previously learned statistics of the frozen BN layers. As a result, if you fine-tune the top layers, their weights will be adjusted to the mean/variance of the new dataset. Nevertheless, during inference they will receive data which are scaled differently because the mean/variance of the original dataset will be used. Consequently, if use Keras's example codes for fine-tuning Inception V3 or any network with batch norm layer, the results will be very bad. Please refer to issue [#9965](https://github.com/keras-team/keras/pull/9965) and [#9214](https://github.com/keras-team/keras/issues/9214). One temporary solution is: 
+Train the model:Train the CNN model using the prepared dataset.
+
+python train.py
+
+Evaluate the model:Test the trained model and view the performance metrics.
+
+python evaluate.py
+
+Detect lesions:Use the trained model to classify new images.
+
+## Future Work
+Expand the model to include more classes of skin conditions.
+
+Improve accuracy using advanced architectures like EfficientNet or Vision Transformers.
+
+Deploy the model as a web application for real-time diagnosis.
+
+**Contributing**
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
+
+**License**
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+The ISIC Archive for providing the dataset.
+
+TensorFlow and Keras documentation for guidance on model implementation.
+
 
 ```python
 for layer in pre_trained_model.layers:
