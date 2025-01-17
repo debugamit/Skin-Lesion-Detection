@@ -3,7 +3,7 @@ Overview
 
 The Skin Lesion Detection project leverages machine learning techniques to identify and classify skin lesions, such as melanoma, from medical images. The aim is to aid early diagnosis and improve patient outcomes by providing a reliable and efficient automated tool for dermatological analysis.
 
-Features
+**Features**
 
 Automated classification of skin lesions into multiple categories (e.g., benign, malignant).
 
@@ -15,7 +15,7 @@ Evaluation metrics, including accuracy, precision, recall, and F1-score, to asse
 
 User-friendly interface for uploading images and viewing results.
 
-Technologies Used
+**Technologies Used**
 
 Programming Languages: Python
 
@@ -46,11 +46,9 @@ Clone the repository:
 
 git clone https://github.com/username/skin-lesion-detection.git
 
-Navigate to the project directory:
+Navigate to the project directory:- cd skin-lesion-detection
 
-cd skin-lesion-detection
-
-Install dependencies:
+Install dependencies:- pip install -r requirements.txt
 
 
 ---
