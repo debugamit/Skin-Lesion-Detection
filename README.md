@@ -1,5 +1,5 @@
 # Skin Lesions Detection with CNN
-Overview
+## Overview
 
 The Skin Lesion Detection project leverages machine learning techniques to identify and classify skin lesions, such as melanoma, from medical images. The aim is to aid early diagnosis and improve patient outcomes by providing a reliable and efficient automated tool for dermatological analysis.
 
@@ -53,19 +53,6 @@ Install dependencies:- pip install -r requirements.txt
 
 ---
 
-## Files Tables
-
-| Sr.No | File Name                                                    | Link                                                         |
-| ----- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1     | Exploratory data analysis                                    | [**Notebook**](http://nbviewer.ipython.org/urls/raw.github.com/ashishpatel26/Skin-Lesions-Detection-Deep-learning/main/Notebooks/Skin_Cancer_EDA.ipynb) |
-| 2     | Baseline model                                               | [**Notebook**](http://nbviewer.ipython.org/urls/raw.github.com/ashishpatel26/Skin-Lesions-Detection-Deep-learning/main/Notebooks/Baseline_CNN.ipynb) |
-| 3     | Fine-tuning the last convolutional block of VGG16            | [**Notebook**](http://nbviewer.ipython.org/urls/raw.github.com/ashishpatel26/Skin-Lesions-Detection-Deep-learning/main/Notebooks/Fine_Tuning_VGG16.ipynb) |
-| 4     | Fine-tuning the top 2 inception blocks of InceptionV3        | [**Notebook**](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Fine_Tuning_InceptionV3.ipynb) |
-| 5     | Fine-tuning the Inception-ResNet-C of Inception-ResNet V2    | [**Notebook**](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Fine_Tuning_InceptionResNet.ipynb) |
-| 6     | Fine-tuning the last dense block of DenseNet 201             | **[Notebook](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Fine_Tuning_DenseNet.ipynb)** |
-| 7     | Fine-tuning all layers of pretrained Inception V3 on ImageNet | [**Notebook**](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Retraining_InceptionV3.ipynb) |
-| 8     | Fine-tuning all layers of pretrained DenseNet 201 on ImageNet | [**Notebook**](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Retraining_DenseNet.ipynb) |
-| 9     | Ensemble model of the fully fine-tuned Inception V3 and DenseNet 201 | **[Notebook](https://nbviewer.jupyter.org/github/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/Notebooks/Ensemble_Models.ipynb)** |
 
 ## Usage
 Preprocess the dataset: Run the preprocessing script to resize and normalize images.
