@@ -28,10 +28,30 @@ Dataset: Publicly available skin lesion datasets such as ISIC (International Ski
 ### **Dataset**
 
 ---
+The dataset used for training and testing is sourced from the ISIC Archive. It contains labeled dermoscopic images of various skin lesions. Ensure the dataset is downloaded and structured as follows:
 
-[**The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)
+/dataset
+  /train
+    /class_1
+    /class_2
+    ...
+  /test
+    /class_1
+    /class_2
+    ...
 
-![](https://github.com/ashishpatel26/Skin-Lesions-Detection-Deep-learning/blob/main/images/dataset.JPG)
+Installation
+
+Clone the repository:
+
+git clone https://github.com/username/skin-lesion-detection.git
+
+Navigate to the project directory:
+
+cd skin-lesion-detection
+
+Install dependencies:
+
 
 ---
 
